@@ -1,0 +1,46 @@
+/**
+ * ULTRAMAX LEGACY: Elite Card Component
+ * Advanced backdrop-filter effects with multi-layer shadows
+ */
+
+.card {
+    background: var(--surface-card);
+    border-radius: 16px;
+    border: 1px solid var(--glass-border);
+    transition: all var(--transition-base);
+}
+
+.card-glass {
+    background: var(--glass-bg-light);
+    backdrop-filter: var(--glass-blur-md);
+    -webkit-backdrop-filter: var(--glass-blur-md);
+    box-shadow: var(--glass-shadow);
+}
+
+.card-elite {
+    background: var(--surface-card);
+    backdrop-filter: var(--glass-blur-lg);
+    -webkit-backdrop-filter: var(--glass-blur-lg);
+    box-shadow: var(--shadow-elite);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-elite::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent);
+    pointer-events: none;
+}
+
+.card-premium {
+    background: var(--surface-elevated);
+    box-shadow: var(--shadow-premium);
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-xl);
+}
