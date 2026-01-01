@@ -1,0 +1,29 @@
+/**
+ * ULTRAMAX LEGACY: Liquid Obsidian Theme
+ * Titanium Palette + Glassmorphism 2.0
+ * Designed for 100M scale with elite aesthetics
+ */
+
+:root {
+    /* === TITANIUM PALETTE === */
+  --obsidian-950: #09090b;
+    --obsidian-900: #18181b;
+    --obsidian-800: #27272a;
+
+  /* === DYNAMIC ACCENTS === */
+  --accent-rose-500: #f43f5e;
+    --accent-emerald-500: #10b981;
+    --accent-cyan-500: #06b6d4;
+
+  /* === GLASSMORPHISM 2.0 === */
+  --glass-blur-md: blur(16px);
+    --glass-bg-light: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+
+  /* === ELITE SURFACE === */
+  --shadow-elite: 
+      0 2px 4px rgba(0, 0, 0, 0.4),
+        0 8px 16px rgba(0, 0, 0, 0.3),
+        0 16px 32px rgba(0, 0, 0, 0.2);
+}
